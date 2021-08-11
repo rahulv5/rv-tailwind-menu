@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e82760b44f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="text-gray-600 grid md:grid-cols-3"> <!--Content Wrapper-->
+        <div class="md:col-span-1 md:flex md:justify-end ">
+            <nav class="text-right px-4 justify-end">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a href="/" class="hover:text-gray-700">Food Ninja</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden">
+                    <i class="fas fa-bars" id="burger"></i>
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="py-1 pr-2 text-gray-700 font-bold border-white border-r-4 hover:border-primary">
+                    <a href="" class=""></a>
+                            <span>Home</span>
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="py-1 pr-2 border-white border-r-4 hover:border-primary">
+                        <a href="#">
+                            <span>About</span>
+                            <i class="fas fa-question-circle"></i>
+                        </a>
+                    </li>
+                    <li class="py-1 pr-2 border-white border-r-4 hover:border-primary">
+                        <a href="#">
+                            <span>Contact</span>
+                            <i class="far fa-id-card"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="px-16 py-6 bg-gray-100 col-span-2">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="text-primary rounded-full py-2 px-3 uppercase text-xs
+                 font-bold cursor-pointer tracking-wider border-primary border-2
+                  hover:bg-primary hover:text-white transition ease-out duration-500">Log In</a>
+                <a href="#" class="text-primary ml-2 rounded-full py-2 px-3 uppercase
+                 text-xs font-bold cursor-pointer tracking-wider
+                  border-primary border-2 hover:bg-primary hover:text-white
+                  transition ease-out duration-500">Sign Up</a>
+            </div>
+
+            <header>
+                <h2 class="text-gray-700 text-6xl font-semibold">Receipes</h2>
+                <h3 class="text-2xl font-semibold">For Ninjas</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Receipes</h4>
+
+            <div class="mt-8 grid lg:grid-cols-3 gap-10 ">
+                    <!-- Cards go here-->
+                    <div class="bg-white rounded overflow-hidden shadow-lg 
+                    hover:shadow-2xl relative">
+                    <img src="img/stew.jpg" class="w-full h-32 sm:h-48 
+                    object-cover" alt="stew">
+                    <div class="m-4">
+                        <span class="font-bold">5 Bean Chilli Stew</span>
+                        <span class="block text-gray-500 text-sm">Recipe by Marlo</span>
+                    </div>
+                    <div class="text-gray-500 text-xs 
+                    uppercase font-bold rounded-full p-2 
+                    absolute top-0 bg-purple-100 ml-2 mt-2">
+                    <i class="fas fa-clock"></i>
+                        <span>25 mins</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-lg hover:shadow-2xl relative">
+                    <img src="img/noodles.jpg" class="w-full h-32 sm:h-48 object-cover" alt="stew">
+                    <div class="m-4">
+                        <span class="font-bold">5 Bean Chilli Stew</span>
+                        <span class="block text-gray-500 text-sm">Recipe by Marlo</span>
+                    </div>
+                    <div class="text-gray-500 text-xs 
+                    uppercase font-bold rounded-full p-2 
+                    absolute top-0 bg-purple-100 ml-2 mt-2">
+                    <i class="fas fa-clock"></i>
+                        <span>25 mins</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-lg hover:shadow-2xl relative">
+                    <img src="img/curry.jpg" class="w-full h-32 sm:h-48 object-cover" alt="stew">
+                    <div class="m-4">
+                        <span class="font-bold">5 Bean Chilli Stew</span>
+                        <span class="block text-gray-500 text-sm">Recipe by Marlo</span>
+                    </div>
+                    <div class="text-gray-500 text-xs 
+                    uppercase font-bold rounded-full p-2 
+                    absolute top-0 bg-purple-100 ml-2 mt-2">
+                    <i class="fas fa-clock"></i>
+                        <span>25 mins</span>
+                    </div>
+                </div>
+
+                </div>
+
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+
+                <div>
+                    <!-- Cards go here-->
+                    <img src="" alt="">
+                    <div>
+                        <span class="font-bold">5 Bean Chilli Stew</span>
+                        <span class="block">Recipe by Marlo</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="bg-secondary-100 text-secondary-200
+                    rounded-full py-2 px-3 uppercase text-xs 
+                    font-bold cursor-pointer tracking-wider 
+                    hover:shadow-inner transform hover:scale-125 transition ease-out duration-300">Load More</div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
